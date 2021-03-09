@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  <!-- jqueryで実装する場合 -->
+        <link rel="stylesheet" href="main2.css">
+        <title>電卓</title>
+    </head>
+
+    <body>
+        <h3>電卓</h3>
+
+        <!-- ここに記述していきましょう！ -->
+        <div class="uk-alert-primary">
+        <p id="display"></p>
+        </div>
+        
+        
+        <table class="uk-table uk-table-small uk-table-driver">
+        <tr><!--行!-->
+          <td class="clear" colspan="3">AC</td><td class="number ope">/</td>
+        </tr>
+        <tr> 
+          <td class="number">1</td><td class="number">2</td><td class="number">3</td><td class="number ope">*</td>　<!-- テーブルセル!-->
+        </tr>
+        <tr>
+          <td class="number">4</td><td class="number">5</td><td class="number">6</td><td class="number ope">-</td>
+        </tr>
+        <tr>
+          <td class="number">7</td><td class="number">8</td><td class="number">9</td><td class="number ope">+</td>
+        </tr>
+        <tr>
+          <td class="number">0</td><td class="number">00</td><td class="number">.</td><td id="eq">=</td>
+        </tr>
+        
+        </table>
+       
+        
+        <script src="main2.js"></script>
+</html>

@@ -27,10 +27,7 @@ document.addEventListener('click',function(event){
   
   var beforeClickNumber = document.getElementById('display').innerText;
   
-  var x = 2*3;
+  //var x = 2*3;
   //console.log(x);
-  
-  
-  
-  document.getElementById('display').innerText = beforeClickNumber + clickNumber; //表示結果をすべて表示させる
+ document.getElementById('display').innerText = beforeClickNumber + clickNumber; //表示結果をすべて表示させる
 })

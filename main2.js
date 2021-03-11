@@ -1,14 +1,5 @@
 document.addEventListener('click',function(event){
   
-  //変更点
-   const zero = document.getElementById('zero');
-  if (event.target.matches('#zero')) {
-    if(clickNumber.innerText.slice(-1) === '0') {
-        return;
-      }
-    }
-  //変更点
-  
   if (event.target.matches('#eq')) { 
     var calcResult = eval(document.getElementById('display').innerText);
     document.getElementById('display').innerText = calcResult;
@@ -27,7 +18,14 @@ document.addEventListener('click',function(event){
   
   var beforeClickNumber = document.getElementById('display').innerText;
   
-  //var x = 2*3;
-  //console.log(x);
+  //変更点
+   if(beforeClickNumber == 0) {
+      document.getElementById('display').innerText = clickNumber;
+    } else {
+      document.getElementById('display').innerText = beforeClickNumber + clickNumber;
+    }
+  }
+  //変更点
+  
  document.getElementById('display').innerText = beforeClickNumber + clickNumber; //表示結果をすべて表示させる
 })

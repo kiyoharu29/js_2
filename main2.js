@@ -1,5 +1,14 @@
 document.addEventListener('click',function(event){
   
+  //変更点
+   const zero = document.getElementById('zero');
+  if (event.target.matches('#zero')) {
+    if(clickNumber.innerText.slice(-1) === '0') {
+        return;
+      }
+    }
+  //変更点
+  
   if (event.target.matches('#eq')) { 
     var calcResult = eval(document.getElementById('display').innerText);
     document.getElementById('display').innerText = calcResult;

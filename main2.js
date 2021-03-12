@@ -18,14 +18,9 @@ document.addEventListener('click',function(event){
   
   var beforeClickNumber = document.getElementById('display').innerText;
   
-  //変更点
    if(beforeClickNumber == 0) {
       document.getElementById('display').innerText = clickNumber;
     } else {
       document.getElementById('display').innerText = beforeClickNumber + clickNumber;
     }
-  }
-  //変更点
-  
- //document.getElementById('display').innerText = beforeClickNumber + clickNumber; //表示結果をすべて表示させる
-//})
+  })

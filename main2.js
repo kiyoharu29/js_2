@@ -28,4 +28,4 @@ document.addEventListener('click',function(event){
   //変更点
   
  //document.getElementById('display').innerText = beforeClickNumber + clickNumber; //表示結果をすべて表示させる
-})
+//})
